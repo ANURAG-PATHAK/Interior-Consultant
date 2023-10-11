@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lora&family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: 0;
+    background-color: #181719;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.navbar--hamburger {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+}
+.navbar--cross{
+    display: none;
+}
+.branding {
+    width: 50vw;
+}
+
+.branding__text {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-family: "Crimson Pro";
+    padding: 0.5vw;
+    color: #fff;
+    border: solid 0.25vw;
+    width: fit-content;
+}
+
+.navbar__container {
+    padding: 0;
+    width: 50vw;
+    display: flex;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.navbar__items {
+    padding: 0;
+    color: #FFF;
+    font-family: "Montserrat";
+    text-align: right;
+    text-underline-offset: 0.5vw;
+    width: 15vw;
+    list-style: none;
+    font-size: 1vw;
+}
+
+.navbar__items:hover {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.main__container {
+    display: flex;
+    height: 60vw;
+}
+
+.main__container__right {
+    width: 60vw;
+}
+
+.main__container__left {
+    align-self: center;
+}
+
+.main__container__text {
+    padding-bottom: 2vw;
+    font-family: "Montserrat";
+    color: #FFF;
+}
+
+.main__container__text__heading {
+    font-family: "Lora";
+    color: #FFF;
+    padding-bottom: 2vw;
+}
+
+.main__container__read-more {
+    font-family: "Montserrat";
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+.main__container__read-more:hover {
+    cursor: pointer;
+}
+
+i {
+    font-size: 4vw;
+}
+
+.main__container__right--demo_image {
+    width: 60vw;
+}
+
+.tag-card {
+    width: 35vw;
+    height: 20vw;
+    position: relative;
+    top: -8vw;
+    left: 20vw;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tag-card__image {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+}
+
+.tag-card__heading--heading {
+    font-family: "Montserrat";
+    color: #FFF;
+    font-size: 2vw;
+    padding: 0;
+    padding-bottom: 1vw;
+}
+
+.tag-card__heading--text {
+    color: #828282;
+    font-family: "Montserrat";
+    font-size: 1vw;
+    padding: 0;
+}
+
+.tag-card__heading {
+    display: flex;
+}
+
+.tag-card__intro {
+    font-family: "Lora";
+    color: #FFF;
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.footer {
+    padding: 1vw;
+    position: relative;
+}
+
+.footer--text {
+    text-align: center;
+    color: #BDBDBD;
+    font-size: 1vw;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #BDBDBD;
+}
+
+@media(max-width: 700px) {
+    .main__container {
+        flex-direction: column;
+    }
+
+    .main__container__right {
+        width: 100vw;
+    }
+
+    .main__container__right--demo_image {
+        align-self: center;
+        width: 91vw;
+    }
+
+    .tag-card {
+        padding: 4vw;
+        width: 78vw;
+        height: 30vw;
+        position: relative;
+        top: -15vw;
+        left: 10vw;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .tag-card__image {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+    }
+
+    .tag-card__heading--heading {
+        font-family: "Montserrat";
+        color: #FFF;
+        font-size: 3vw;
+        padding: 0;
+        padding-bottom: 1vw;
+    }
+
+    .tag-card__heading--text {
+        padding: 0;
+        color: #828282;
+        font-family: "Montserrat";
+        font-size: 2vw;
+    }
+
+    .tag-card__heading {
+        display: flex;
+    }
+
+    .tag-card__intro {
+        width: 50vw;
+        font-family: "Lora";
+        color: #FFF;
+        font-size: 4vw;
+        font-weight: 900;
+    }
+
+    .footer {
+        padding: 1vw;
+        position: relative;
+        top: 50vh;
+    }
+
+    .navbar {
+        padding-top: 10vw;
+    }
+
+    .navbar__container {
+        display: none;
+    }
+
+    .navbar--hamburger {
+        width: 50vw;
+        padding-right: 1vw;
+        display: block;
+        flex-shrink: 0;
+        color: #F2F2F2;
+        text-align: right;
+    }
+
+    i {
+        font-size: 5vw;
+    }
+}

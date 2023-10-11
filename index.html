@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Interior Consultant</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="branding" id="branding">
+            <p class="branding__text">This Interior</p>
+        </div>
+        <ul class="navbar__container" id="navbar__container">
+            <li class="navbar__items navbar__item-1" id="navbar__item-1">Home</li>
+            <li class="navbar__items navbar__item-1" id="navbar__item-2">Collection</li>
+            <li class="navbar__items navbar__item-1" id="navbar__item-3">About</li>
+            <li class="navbar__items navbar__item-1" id="navbar__item-4">Contact</li>
+        </ul>
+        <div class="navbar--hamburger" id="navbar--hamburger" onclick="menuOpen()">
+            <i class="uil uil-bars"></i>
+        </div>
+        <div class="navbar--cross" id="navbar--cross">
+            <i class="uil uil-times"></i>
+        </div>
+    </nav>
+    <div class="main__container" id="main__container">
+        <div class="main__container__left">
+            <h1 class="main__container__text__heading">
+                Modern interior
+            </h1>
+            <p class="main__container__text">
+                A full-Service residential & commercial interior design and staging company offering professional
+                organizing & eco-services.
+            </p>
+            <p class="main__container__read-more">
+                Read more <i class="uil uil-arrow-right"></i>
+            </p>
+        </div>
+        <div class="main__container__right">
+            <img class="main__container__right--demo_image" src="Assets/photo1.png" alt="Demo Image">
+            <div class="tag-card">
+                <div class="tag-card__heading">
+                    <img class="tag-card__image" src="Assets/photo2.png" alt="my picture">
+                    <div>
+                        <h1 class="tag-card__heading--heading">Aliza Webber</h1>
+                        <p class="tag-card__heading--text">Interior designer</p>
+                    </div>
+                </div>
+                <div class="tag-card__intro">
+                    Designed in 2023 by Aliza Webber
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <p class="footer--text">created by <a href="https://github.com/ANURAG-PATHAK">ANURAG-PATHAK</a> - <a
+                href="https://devchallenges.io/">devChallenges.io</a>
+        </p>
+    </footer>
+    <script>
+        function menuOpen() {
+            document.getElementById("navbar--hamburger").style.display = "none";
+            document.getElementById("navbar--cross").style.width = "93.5vw";
+            document.getElementById("navbar--cross").style.color = "#F2F2F2";
+            document.getElementById("navbar--cross").style.display = "block";
+            document.getElementById("branding").style.display = "none";
+            document.getElementById("main__container").style.display = "none";
+            document.getElementById("footer").style.display = "none";
+            document.getElementById("navbar").style.textAlign = "right";
+            document.getElementById("navbar").style.flexDirection = "column-reverse";
+            document.getElementById("navbar__container").style.display = "flex";
+            document.getElementById("navbar__container").style.flexDirection = "column";
+            document.getElementById("navbar__container").style.width = "93.5vw";
+            document.getElementById("navbar__container").style.height = "90vh";
+            document.getElementById("navbar__container").style.justifyContent = "center";
+            document.getElementById("navbar__container").style.alignContent = "center";
+            document.getElementById("navbar__item-1").style.width = "93vw";
+            document.getElementById("navbar__item-1").style.fontSize = "5vw";
+            document.getElementById("navbar__item-1").style.textAlign = "center";
+            document.getElementById("navbar__item-1").style.padding = "5vw";
+            document.getElementById("navbar__item-2").style.width = "93vw";
+            document.getElementById("navbar__item-2").style.fontSize = "5vw";
+            document.getElementById("navbar__item-2").style.textAlign = "center";
+            document.getElementById("navbar__item-2").style.padding = "5vw";
+            document.getElementById("navbar__item-3").style.width = "93vw";
+            document.getElementById("navbar__item-3").style.fontSize = "5vw";
+            document.getElementById("navbar__item-3").style.textAlign = "center";
+            document.getElementById("navbar__item-3").style.padding = "5vw";
+            document.getElementById("navbar__item-4").style.width = "93vw";
+            document.getElementById("navbar__item-4").style.fontSize = "5vw";
+            document.getElementById("navbar__item-4").style.textAlign = "center";
+            document.getElementById("navbar__item-4").style.padding = "5vw";
+        }
+    </script>
+</body>
+
+</html>
